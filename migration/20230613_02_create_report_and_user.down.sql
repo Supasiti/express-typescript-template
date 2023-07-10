@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS report;
+DROP TABLE IF EXISTS "user";
+
+DROP TYPE IF EXISTS report_status;

@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  report_db:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_DB: esgreport
+      POSTGRES_USER: isptuser
+      POSTGRES_PASSWORD: verysecret
+    ports:
+      - "5432:5432"
+    
+volumes:
+  pg-data:

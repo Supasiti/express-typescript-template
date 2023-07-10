@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS report_user;
+
+DROP TYPE IF EXISTS user_role;

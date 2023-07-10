@@ -1,0 +1,19 @@
+/.env
+/.history/
+/node_modules
+/api-doc/
+/coverage/
+.DS_Store
+
+# --- IDE ---
+/*.iml
+/.gradle
+/.idea
+/.vscode
+
+*.log
+mb.pid
+npm-debug.log
+/build
+/config/dev.env
+
