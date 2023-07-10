@@ -1,14 +1,13 @@
 version: "3"
 
 services:
-  report_db:
-    image: postgres:13-alpine
+  sample_db:
+    image: postgres:14-alpine
+    volumes:
+      - ./migrations/up/:/docker-entrypoint-initdb.d/
     environment:
-      POSTGRES_DB: esgreport
-      POSTGRES_USER: isptuser
+      POSTGRES_DB: sampledb
+      POSTGRES_USER: admin
       POSTGRES_PASSWORD: verysecret
     ports:
-      - "5432:5432"
-    
-volumes:
-  pg-data:
+      - '5432:5432'
